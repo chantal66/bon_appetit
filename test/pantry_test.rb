@@ -40,7 +40,13 @@ class PantryTest < Minitest::Test
   end
 
   def test_can_receive_recipe_ingredients
-    pantry
+    pantry = Pantry.new
+    r = Recipe.new('Cheese Pizza')
+    
+    assert_equal ({}), r.ingredients
+  end
+
+  def test_can_it_keep_trac
     
   end
 end
