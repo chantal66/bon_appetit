@@ -18,20 +18,12 @@ class PantryTest < Minitest::Test
     assert result.is_a? Hash
   end
 
-  # def test_it_can_put_item_in_stock
-  #   pantry = Pantry.new
-  #   binding.pry
-  #   pantry << item
-
-  #   assert_equal [], pantry.stock
-  # end
-
   def test_it_can_check_the_stock
-    # skip
+
     pantry = Pantry.new
     ingredient = Recipe.new('Cheese')
-       binding.pry
-    pantry << ingredient
+    ingredient.add_ingredient('Cheese', 0) 
+    # binding.pry
  
     assert_equal 0, pantry.stock_check("Cheese")
   end

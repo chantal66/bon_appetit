@@ -4,20 +4,12 @@ class Pantry
 
   attr_reader :stock
               
-
   def initialize
     @stock = {}
+    # @ingredient = Recipe.new
   end
 
-  def put(ingredient)
-    stock[ingredient]
+  def stock_check("Cheese")
+
   end
-
-  # def stock_check(ingredient)
-  #   stock.length
-  # end
-
-  # def restock
-    
-  # end
 end
